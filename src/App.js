@@ -1,11 +1,12 @@
 //@flow
 
 import * as React from 'react'
+import StepComponent from './Components/StepComponent'
 
 const App = (): React$Element<'div'> => {
   return (
     <div className="App">
-      <div>Here is a simple steps component</div>
+      <StepComponent />
     </div>
   )
 }

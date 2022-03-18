@@ -1,8 +1,10 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from '@testing-library/react'
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+import StepComponent from './Components/StepComponent'
+import PageOne from './Components/Pages/PageOne'
+
+test('should render Page One texts correctly', () => {
+  render(<PageOne />)
+  const pageOneText = screen.getByText(/Page One/i)
+  expect(pageOneText).toBeInTheDocument()
+})
