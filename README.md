@@ -1,4 +1,4 @@
-Getting started with this repository
+### Getting started with this repository
 
  - Start by cloning this repo in your folder of choice
 ```
