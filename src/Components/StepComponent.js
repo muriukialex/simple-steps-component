@@ -35,31 +35,57 @@ const StepComponent = (): React$Element<'div'> => {
   }
 
   const currentPage = (pageNumber) => {
-    if (pageNumber === 0) {
-      return (
-        <PageOne
-          currentStep={currentStep}
-          handleNext={handleNext}
-          handleBack={handleBack}
-        />
-      )
-    } else if (pageNumber === 1) {
-      return (
-        <PageTwo
-          currentStep={currentStep}
-          handleNext={handleNext}
-          handleBack={handleBack}
-        />
-      )
-    } else {
-      return (
-        <PageThree
-          currentStep={currentStep}
-          handleNext={handleNext}
-          handleBack={handleBack}
-        />
-      )
+    switch (pageNumber) {
+      case 0:
+        return (
+          <PageOne
+            currentStep={currentStep}
+            handleNext={handleNext}
+            handleBack={handleBack}
+          />
+        )
+      case 1:
+        return (
+          <PageTwo
+            currentStep={currentStep}
+            handleNext={handleNext}
+            handleBack={handleBack}
+          />
+        )
+      case 2:
+        return (
+          <PageThree
+            currentStep={currentStep}
+            handleNext={handleNext}
+            handleBack={handleBack}
+          />
+        )
     }
+    // if (pageNumber === 0) {
+    //   return (
+    //     <PageOne
+    //       currentStep={currentStep}
+    //       handleNext={handleNext}
+    //       handleBack={handleBack}
+    //     />
+    //   )
+    // } else if (pageNumber === 1) {
+    //   return (
+    //     <PageTwo
+    //       currentStep={currentStep}
+    //       handleNext={handleNext}
+    //       handleBack={handleBack}
+    //     />
+    //   )
+    // } else {
+    //   return (
+    //     <PageThree
+    //       currentStep={currentStep}
+    //       handleNext={handleNext}
+    //       handleBack={handleBack}
+    //     />
+    //   )
+    // }
   }
 
   return (
