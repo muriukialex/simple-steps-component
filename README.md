@@ -10,7 +10,7 @@
   cd simple-steps-component
  ```
 
- - install dependencies required to run this repo through the node package manager through either
+ - install dependencies required to run this repo through the node package manager with either
  ```
   npm install
  ```
